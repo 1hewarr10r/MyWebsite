@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Umar Turdumambetov — Portfolio</title>
+  <meta name="description" content="Portfolio of Umar Turdumambetov: projects, goals, hobbies, resume, and contact links (LinkedIn & GitHub)." />
+  <meta name="author" content="Umar Turdumambetov" />
+  <meta property="og:title" content="Umar Turdumambetov — Portfolio" />
+  <meta property="og:description" content="Projects, goals, hobbies, resume, and contact links." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="/favicon.png" />
+  <style>
+    :root{
+      --bg: #0b1020;         
+      --panel:#0f172a;       
+      --muted:#94a3b8;       
+      --text:#e2e8f0;       
+      --brand:#22d3ee;       
+      --brand-2:#a78bfa;     
+      --accent:#34d399;      
+      --ring: 0 0 0 0.15rem rgba(34,211,238,.35);
+      --radius: 1.25rem;
+      --shadow: 0 10px 30px rgba(2,6,23,.45), inset 0 0 0 1px rgba(148,163,184,.08);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font-family:var(--sans);}
+    a{color:inherit; text-decoration:none}
+    a:focus-visible, button:focus-visible{outline:none; box-shadow:var(--ring)}
+    img{max-width:100%; display:block}
+
+    .wrap{max-width:1100px; margin:0 auto; padding:24px}
+    header{position:sticky; top:0; z-index:40; backdrop-filter:saturate(1.2) blur(10px); background:linear-gradient(180deg, rgba(11,16,32,.88), rgba(11,16,32,.6) 40%, transparent)}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .nav a{opacity:.9}
+    .nav a:hover{opacity:1}
+    .nav .menu{display:flex; gap:18px; align-items:center}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:999px; background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:#041016; font-weight:700; border:none; cursor:pointer}
+    .btn:active{transform:translateY(1px)}
+    .ghost{background:transparent; color:var(--text); border:1px solid rgba(148,163,184,.2)}
+    main{display:grid; gap:28px}
+    section{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00)); border-radius:var(--radius); box-shadow:var(--shadow); border:1px solid rgba(148,163,184,.10)}
+    .pad{padding:28px}
+    .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:center}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    .title{font-size:clamp(28px, 4vw, 44px); line-height:1.1; letter-spacing:.2px; margin:0}
+    .subtitle{color:var(--muted); margin:10px 0 0}
+    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .chip{font:600 12px/1 var(--sans); padding:8px 12px; border-radius:999px; background:rgba(52,211,153,.10); border:1px solid rgba(52,211,153,.25); color:#bfffe2}
+    .grid{display:grid; gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3, 1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2, 1fr)}
+    @media (max-width:900px){.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}}
+    .card{background:rgba(15,23,42,.65); border:1px solid rgba(148,163,184,.12); border-radius:18px; padding:18px}
+    .card h3{margin:0 0 6px; font-size:18px}
+    .muted{color:var(--muted)}
+    .row{display:flex; align-items:center; gap:14px; flex-wrap:wrap}
+    .split{display:grid; grid-template-columns: 1fr 1fr; gap:18px}
+    @media (max-width:900px){.split{grid-template-columns:1fr}}
+    footer{opacity:.8; font-size:14px}
+    .prose p{margin:0 0 10px}
+    /* Avatar */
+    .avatar{width:110px; height:110px; border-radius:50%; border:3px solid rgba(148,163,184,.25); overflow:hidden}
+    .avatar img{width:100%; height:100%; object-fit:cover}
+    /* Social */
+    .social a{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; border:1px solid rgba(148,163,184,.18); background:rgba(15,23,42,.6)}
+    .social svg{width:18px; height:18px}
+    /* Progress / goals */
+    .goal{display:flex; justify-content:space-between; gap:14px; align-items:center}
+    .bar{height:8px; border-radius:999px; background:rgba(148,163,184,.18); overflow:hidden}
+    .bar>span{display:block; height:100%; background:linear-gradient(90deg, var(--brand), var(--accent))}
+    /* Utilities */
+    .tag{display:inline-block; padding:6px 10px; border:1px dashed rgba(148,163,184,.3); border-radius:10px; font-size:12px; color:var(--muted)}
+    .right{margin-left:auto}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+  <script>
+
+    
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Umar Turdumambetov",
+    "url": "https://your-domain.com/",
+    "jobTitle": "Student",
+    "affiliation": {"@type": "College", "name": "Bellevue College"},
+    "sameAs": [
+      "https://www.linkedin.com/in/umar-turdumambetov-6160ba368/",
+      "https://github.com/1hewarr10r"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="row">
+        <div class="avatar" aria-hidden="true"><img src="/src/IMG_3600 2.png" alt="" /></div>
+        <div>
+          <strong>Umar Turdumambetov</strong><br/>
+          <span class="muted">Student - Bellevue College</span>
+        </div>
+      </div>
+      <nav class="menu" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#goals">Goals</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#resume">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <main>
+      <!-- Hero -->
+      <section class="hero pad" id="home">
+        <div>
+          <h1 class="title">Hi, I’m Umar — building my path to the life and Technologies.</h1>
+          <p class="subtitle">I’m a Bellevue College student interested in <strong>software engineering</strong> and <strong>machine learning</strong>. I love shipping small, useful projects and learning in public.</p>
+
+          <div class="chips" aria-label="Technologies I use">
+            <span class="chip">Python</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">Data/ML</span>
+          </div>
+
+          <div class="row" style="margin-top:18px">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn ghost" href="#resume">View CV</a>
+            <span class="tag">Open to internships</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">Quick Links</h3>
+          <div class="row social">
+            <a href="https://www.linkedin.com/in/umar-turdumambetov-6160ba368/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2 4 0 4.7 2.6 4.7 6V24h-4v-7.1c0-1.7 0-3.9-2.4-3.9-2.4 0-2.7 1.9-2.7 3.8V24h-4V8z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/1hewarr10r" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.87 3.16 9 7.55 10.45.55.1.75-.25.75-.55v-2c-3.07.67-3.72-1.32-3.72-1.32-.5-1.22-1.22-1.55-1.22-1.55-1-.67.08-.66.08-.66 1.1.08 1.68 1.15 1.68 1.15.98 1.7 2.57 1.2 3.2.92.1-.72.38-1.2.68-1.48-2.45-.28-5.02-1.25-5.02-5.6 0-1.24.44-2.25 1.15-3.04-.12-.28-.5-1.43.1-2.98 0 0 .94-.3 3.1 1.15a10.7 10.7 0 0 1 5.64 0c2.17-1.45 3.1-1.15 3.1-1.15.6 1.55.22 2.7.1 2.98.72.8 1.15 1.8 1.15 3.04 0 4.36-2.58 5.32-5.04 5.6.4.34.74 1 .74 2.02v3c0 .3.2.65.76.54 4.38-1.45 7.54-5.58 7.54-10.45C23.1 5.33 18.27.5 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a href="">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              CV / Resume
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="pad" id="projects">
+        <div class="row" style="margin-bottom:6px">
+          <h2 style="margin:0">Projects</h2>
+          <span class="tag right">Selected work</span>
+        </div>
+        <div class="grid cols-3">
+          <article class="card">
+            <h3>Project</h3>
+            <p class="muted">Description</p>
+            <p class="muted" style="font-family:var(--mono)">Highlight</p>
+            <div class="row">
+              <a class="btn ghost" href="linktotheproject" target="_blank" rel="noopener">Link to it</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Demo of it</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Project</h3>
+            <p class="muted">Description</p>
+            <p class="muted" style="font-family:var(--mono)">Highlight</p>
+            <div class="row">
+              <a class="btn ghost" href="Link to the project" target="_blank" rel="noopener">Link to it</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Demo of it</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Project</h3>
+            <p class="muted">Description</p>
+            <p class="muted" style="font-family:var(--mono)">Highlight</p>
+            <div class="row">
+              <a class="btn ghost" href="#" target="_blank" rel="noopener">Link to it</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Demo of it</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Goals -->
+      <section class="pad" id="goals">
+        <div class="row" style="margin-bottom:6px">
+          <h2 style="margin:0">Goals</h2>
+          <span class="tag right">Roadmap</span>
+        </div>
+        <div class="grid cols-2">
+          <div class="card prose">
+            <h3>2025 Focus</h3>
+            <p>• Transfer to a top CS program and maintain a strong GPA.</p>
+            <p>• Ship 3 portfolio‑ready projects </p>
+            <p>• Contribute to open source monthly.</p>
+          </div>
+          <div class="card">
+            <div class="goal">
+              <span>Data Structures & Algorithms</span>
+              <span class="muted">0%</span>
+            </div>
+            <div class="bar" aria-hidden="true"><span style="width:0%"></span></div>
+            <div class="goal" style="margin-top:12px">
+              <span>Portfolio Projects</span>
+              <span class="muted">0%</span>
+            </div>
+            <div class="bar" aria-hidden="true"><span style="width:0%"></span></div>
+            <div class="goal" style="margin-top:12px">
+              <span>Open Source</span>
+              <span class="muted">0%</span>
+            </div>
+            <div class="bar" aria-hidden="true"><span style="width:0%"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hobbies -->
+      <section class="pad" id="hobbies">
+        <div class="row" style="margin-bottom:6px">
+          <h2 style="margin:0">Hobbies</h2>
+          <span class="tag right">Outside class</span>
+        </div>
+        <div class="grid cols-3">
+          <div class="card">
+            <h3>Lifting & Fitness</h3>
+            <p class="muted">Calisthenics and Martial Arts: Love to participate in to competitions and build my body</p>
+          </div>
+          <div class="card">
+            <h3>Music</h3>
+            <p class="muted">Do enjoy of listeting some good or vibe giving music, preferebly rock</p>
+          </div>
+          <div class="card">
+            <h3>Hackathons</h3>
+            <p class="muted">Rapid-prototyping ML , web projects with friends.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume / CV -->
+      <section class="pad" id="resume">
+        <div class="row" style="margin-bottom:6px">
+          <h2 style="margin:0">CV / Resume</h2>
+          <span class="tag right">PDF download</span>
+        </div>
+        <div class="split">
+          <div class="card prose">
+            <p>Interested in my projects or my skills? <br> My CV:</p>
+            <div class="row" style="margin-top:20px">
+              <a class="btn" href="src/UmarTurdumambetov_CV.pdf" download>Download CV</a>
+              <a class="btn ghost" href="src/UmarTurdumambetov_CV.pdf" target="_blank" rel="noopener">Open in browser</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Highlights</h3>
+            <ul class="muted" style="margin:8px 0 0 18px">
+              <li>Coursework: Data Structures, Discrete Math, Linear Algebra</li>
+              <li>Tools: Python, JS/TS, PyTorch</li>
+              <li>Clubs: CS club, Hackathons, Tutoring</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="pad" id="contact">
+        <div class="row" style="margin-bottom:6px">
+          <h2 style="margin:0">Contact</h2>
+          <span class="tag right">Let’s talk</span>
+        </div>
+        <div class="grid cols-2">
+          <div class="card">
+            <h3>Get in touch</h3>
+            <p class="muted">Best way is email or LinkedIn. I reply as soon as possible</p>
+            <div class="row social">
+              <a href="mailto:umarturdumambetov@gmail.com">Email</a>
+              <a href="https://www.linkedin.com/in/umar-turdumambetov-6160ba368/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/1hewarr10r" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <div class="card prose">
+            <h3>About this site</h3>
+            <p>That's my web site , created to collect all the links to me. I have everything here , basically my spot haha</p>
+            <p class="muted">Go ahead and explore</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="pad" aria-label="Site footer">
+        <div class="row">
+          <span>© <span id="year"></span> Umar Turdumambetov</span>
+          <a class="right muted" href="#home">Back to top ↑</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
